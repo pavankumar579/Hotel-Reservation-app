@@ -1,0 +1,27 @@
+jwt:
+  secret: secrectkey123
+
+server:
+    port: 8081         
+    
+    
+spring:
+    application:
+           name: HotelReservationSystem_Reg_Log
+    data:
+        mongodb:
+            uri: mongodb+srv://pavankumar579:Pavan1234@cluster0.xppng.mongodb.net/loginAndSignup?retryWrites=true&w=majority
+eureka:
+     client:
+          service-url:
+                   defaultZone: http://localhost:8761/eureka/          
+                          
+logging:
+  file: 
+    path: /my-logs/app.log
+    name: log.txt  
+    
+data:
+   exception:
+          incmsg: Invalid Credentials!!
+            
